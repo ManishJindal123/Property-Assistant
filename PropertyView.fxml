@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="700.0" minWidth="700.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="availProperty.PropertyViewController">
+   <children>
+      <Label layoutX="201.0" layoutY="25.0" prefHeight="34.0" prefWidth="358.0" text="Available Property For Sale">
+         <font>
+            <Font name="Cambria Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="67.0" prefHeight="26.0" prefWidth="102.0" text="Property ID">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPropertyID" layoutX="69.0" layoutY="105.0" prefHeight="26.0" prefWidth="87.0" />
+      <Button layoutX="189.0" layoutY="102.0" mnemonicParsing="false" onAction="#doFetch" style="-fx-background-color: black;" text="Fetch" textFill="#d7d7d7">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Button>
+      <Separator layoutY="148.0" prefHeight="8.0" prefWidth="700.0" />
+      <Label layoutX="21.0" layoutY="162.0" prefHeight="27.0" prefWidth="222.0" text="Customer ID / Contact No.">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtContact" layoutX="266.0" layoutY="162.0" prefHeight="26.0" prefWidth="260.0" />
+      <Label layoutX="21.0" layoutY="213.0" prefHeight="31.0" prefWidth="202.0" text="Property Information:">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="215.0" prefHeight="26.0" prefWidth="150.0" text="Property Type">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboType" editable="true" layoutX="250.0" layoutY="254.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="526.0" layoutY="217.0" text="Size-Sq.yrds">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSize" layoutX="509.0" layoutY="254.0" />
+      <Label layoutX="21.0" layoutY="308.0" prefHeight="31.0" prefWidth="116.0" text="Dimensions:">
+         <font>
+            <Font name="Cambria Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="169.0" layoutY="309.0" prefHeight="26.0" prefWidth="63.0" text="Widht">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="310.0" prefHeight="26.0" prefWidth="63.0" text="Depth">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="436.0" layoutY="311.0" prefHeight="26.0" prefWidth="80.0" text="Left-Side">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="557.0" layoutY="309.0" prefHeight="26.0" prefWidth="87.0" text="Right-Side">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtWidht" layoutX="169.0" layoutY="347.0" prefHeight="26.0" prefWidth="63.0" />
+      <TextField fx:id="txtRSide" layoutX="565.0" layoutY="347.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtLSide" layoutX="436.0" layoutY="347.0" prefHeight="26.0" prefWidth="80.0" />
+      <TextField fx:id="txtDepth" layoutX="304.0" layoutY="347.0" prefHeight="26.0" prefWidth="63.0" />
+      <Label layoutX="16.0" layoutY="389.0" text="Property Location">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLocation" layoutX="16.0" layoutY="425.0" prefHeight="26.0" prefWidth="669.0" />
+      <Label layoutX="43.0" layoutY="469.0" prefHeight="26.0" prefWidth="72.0" text="City">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="254.0" layoutY="469.0" prefHeight="26.0" prefWidth="164.0" text="Amount Demanded">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="533.0" layoutY="469.0" prefHeight="26.0" prefWidth="87.0" text="Direction">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCity" layoutX="40.0" layoutY="503.0" prefHeight="26.0" prefWidth="116.0" />
+      <TextField fx:id="txtAmount" layoutX="250.0" layoutY="504.0" />
+      <ComboBox fx:id="comboDirection" editable="true" layoutX="508.0" layoutY="503.0" prefWidth="150.0" />
+      <Label layoutX="16.0" layoutY="551.0" prefHeight="26.0" prefWidth="116.0" text="Other Details">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOtherDetail" layoutX="16.0" layoutY="588.0" prefHeight="49.0" prefWidth="670.0" />
+      <Button layoutX="176.0" layoutY="655.0" mnemonicParsing="false" onAction="#doSave" style="-fx-background-color: black;" text="Save Info" textFill="#ececec">
+         <font>
+            <Font name="Cambria Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button layoutX="384.0" layoutY="655.0" mnemonicParsing="false" onAction="#doDelete" style="-fx-background-color: black;" text="Delete Property" textFill="#f7f4f4">
+         <font>
+            <Font name="Cambria Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

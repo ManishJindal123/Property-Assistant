@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="450.0" minWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.loginFormController">
+   <children>
+      <Label layoutX="100.0" layoutY="24.0" text="Property  Assistant">
+         <font>
+            <Font name="Cambria Bold" size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="131.0" fitWidth="169.0" layoutX="35.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@user%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="195.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../signup/icons8-user-male-480.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtusername" layoutX="250.0" layoutY="147.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="43.0" fitWidth="76.0" layoutX="195.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../signup/icons8-password-96.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtpass" layoutX="250.0" layoutY="208.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="btnSignIN" layoutX="250.0" layoutY="272.0" mnemonicParsing="false" onAction="#doSignIN" prefHeight="30.0" prefWidth="190.0" style="-fx-background-color: black;" text="SIGN IN" textFill="#fffafa">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="172.0" layoutY="390.0" text="New to Property Assistant ?">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSignUP" layoutX="386.0" layoutY="386.0" mnemonicParsing="false" onAction="#doSignUP" prefHeight="28.0" prefWidth="102.0" style="-fx-background-color: BLACK;" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

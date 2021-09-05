@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="550.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.signupFormController">
+   <children>
+      <Label layoutX="128.0" layoutY="29.0" text="Property Assistant">
+         <font>
+            <Font name="Cambria Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="261.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-user-male-480.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtusername" layoutX="310.0" layoutY="156.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="43.0" fitWidth="76.0" layoutX="258.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-password-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="258.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-password-96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="260.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@dob.png.jpeg" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="dateDob" layoutX="310.0" layoutY="325.0" minHeight="33.0" minWidth="170.0" prefHeight="33.0" prefWidth="190.0" promptText="Date-of-Birth" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="43.0" fitWidth="39.0" layoutX="260.0" layoutY="378.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icons8-phone-50.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPhone" layoutX="310.0" layoutY="378.0" minHeight="33.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Phone" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <Button fx:id="btnSignUP" layoutX="359.0" layoutY="433.0" mnemonicParsing="false" onAction="#doSignUP" style="-fx-background-color: black;" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="txtpass" layoutX="310.0" layoutY="212.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <PasswordField fx:id="txtpass1" layoutX="310.0" layoutY="271.0" minHeight="30.0" minWidth="152.0" prefHeight="33.0" prefWidth="190.0" promptText=" Confirm Password" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 2px 0px;" />
+      <ImageView fitHeight="221.0" fitWidth="190.0" layoutX="28.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@add-user-symbol.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
