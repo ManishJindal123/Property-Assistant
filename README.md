@@ -1,0 +1,1 @@
+The main purpose to develop this Property Assistant  project is to manage the data of both Buyer and Seller. This is a desktop application in which property dealer can perform all kind of functions (save,update,fetch,delete) instead of using files system
